@@ -1,3 +1,5 @@
+// find Joel's short solution below
+
 const Array1 = 
 [
   "Dude, I finally did it - I managed to find a dagger of the Assassin",
@@ -75,3 +77,23 @@ const getCensoredComment = (array) => {
 getCensoredComment(Array1);
 getCensoredComment(Array2);
 getCensoredComment(Array3);
+
+// Joel's solution:
+
+// function printCensoredComments(comments) {
+//     for (let counter = 0; counter < comments.length; counter++) {
+//       const comment = comments[counter];
+//       const words = comment.split(" ");
+//       for (let i = 0; i < words.length; i++) {
+//         let word = words[i];
+//         switch (word.toLowerCase()) {
+//           case "heck": words[i] = "H**k"; break;
+//           case "feck": words[i] = "F*ck"; break;
+//           case "darn": words[i] = "Heckn'"; break;
+//           case "dude": words[i] = "Friendo"; break;
+//           case "assassin": words[i] = "WooohooWoohooin"; break;
+//         }
+//       }
+//       console.log(words.join(" "));
+//     }
+//   }
